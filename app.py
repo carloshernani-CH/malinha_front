@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 import json
 
-backend_url = "https://seu-backend-no-render.com/submit_form"
+backend_url = "https://malinha.onrender.com"
 
 def create_form():
     st.title("Malinha Form")
