@@ -14,7 +14,7 @@ def create_form():
     email = st.text_input("Email*")
     tamanho_roupas = st.selectbox("Quais tamanhos você geralmente utiliza em suas Roupas", ["P", "M", "G", "GG"])
     tamanho_pijamas = st.selectbox("Quais tamanhos você geralmente utiliza em seus Pijamas", ["P", "M", "G", "GG", "XG"])
-    ocasioes = st.selectbox("Ocasiões", ["Casual", "Trabalho", "Eventos formais", "Atividades de lazer"])
+    ocasioes = st.selectbox("Ocasiões", ["Casual", "Trabalho", "Eventos Formais", "Atividades de Lazer"])
     estilos_preferidos = st.selectbox("Estilos preferidos", ["Clássico", "Moderno", "Esportivo", "Boho"])
     cep = st.text_input("CEP*")
     numero = st.text_input("Número*")
