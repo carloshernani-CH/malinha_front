@@ -38,10 +38,10 @@ def create_form():
         # Enviar dados para o backend
         response = requests.post(backend_url, json=data)
         
-        if response.status_code == 200:
-            st.success("Formulário enviado com sucesso!")
-            st.write("Agradecemos por preencher o formulário. Em breve você receberá sua malinha personalizada!")
-        else:
+      
+        st.success("Formulário enviado com sucesso!")
+        st.write("Agradecemos por preencher o formulário. Em breve você receberá sua malinha personalizada!")
+        if response.status_code != 200:
             st.error("Ocorreu um erro ao processar o formulário.")
             st.write(response.json().get("message", "Erro desconhecido"))
 
