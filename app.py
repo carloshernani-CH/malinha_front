@@ -40,11 +40,10 @@ def create_form():
         
         if response.status_code == 200:
             st.success("Formulário enviado com sucesso!")
-            st.write("Email enviado com sucesso!")
+            st.write("Agradecemos por preencher o formulário. Em breve você receberá sua malinha personalizada!")
         else:
             st.error("Ocorreu um erro ao processar o formulário.")
             st.write(response.json().get("message", "Erro desconhecido"))
 
 if __name__ == "__main__":
     create_form()
-
